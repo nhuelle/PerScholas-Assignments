@@ -1,0 +1,52 @@
+.parent {
+  border: solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+.child {
+  color: white;
+  font-size: 75px;
+  text-align: center;
+  margin: 10px;
+}
+
+#ch1 {
+  background-color: red;
+}
+
+#ch2 {
+  background-color: orange;
+}
+
+#ch3 {
+  background-color: yellow;
+}
+
+#ch4 {
+  background-color: green;
+}
+
+#ch5 {
+  background-color: blue;
+}
+
+#ch6 {
+  background-color: purple;
+}
+
+#ch7 {
+  background-color: pink;
+}
+
+#ch8 {
+  background-color: black;
+}
+
+#ch9 {
+  background-color: violet;
+}
+
+#ch10 {
+  background-color: gray;
+}
