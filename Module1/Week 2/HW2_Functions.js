@@ -30,80 +30,82 @@ maxOfThree(9, 3, 6)
 /*
 3. Write a function  isCharacterAVowel  that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
 */
-function isCharacterAVowel(x) {
-  if (x == "a" || x == "e" || x == "i" || x == "o" || x == "u") {
+function isCharacterAVowel(char) {
+  if (char == "a" || char == "e" || char == "i" || char == "o" || char == "u") {
     console.log("Character is a vowel.")
+  }
+  else if (char == "y") {
+    console.log("Character can sometimes be a vowel.")
+  }
+  else if (char = " ") {
+    console.log("Please enter character.")
   }
   else {
     console.log("Character is a consonant.")
   }
 };
-isCharacterAVowel("b")
+isCharacterAVowel("a");
 /*
 4. Define a function  sumArray  and a function  multiplyArray  that sums and multiplies (respectively) all the numbers in an array of numbers. For example,  sumArray([1,2,3,4])  should return 10, and  multiplyArray([1,2,3,4])  should return 24.
 */
-function sumArray(numbers) {
-  let sum = 0;
-  for(i=0; i<numbers.length; i++){
-    sum = sum + numbers[i];
-  }
-  return sum;
-}
-console.log(sumArray([1,2,3,4]));
+sumArray
+function sumArray() {
+let data = [11, 21, 46, 19, 18];
+sum = data.reduce((a, b) => {
+  return a + b;
+});
+return ('The sum is: ', sum);
+};
+console.log(sumArray());
 
-function multiplyArray(numbers) {
-    let product=1
-    for(i=0; i<numbers.length; i++){
-      product = product * numbers[i]
-    }
-    return product
-  }
-console.log(multiplyArray([1,2,3,4]))
+multiplyArray
+function  multiplyArray() {
+let data = [11, 21, 46, 19, 18];
+product = data.reduce((a, b) => {
+  return a * b;
+});
+return ('The product is: ', product);
+};
+console.log(multiplyArray());
 /*
 5.Write a function that returns the number of arguments passed to the function when called.
 */
-function function1() {}
+function countArguments(func) {
+  console.log(func.length);
+};
 
-  function function2(a, b, c) {}
-
-  console.log (function1.length);
-  console.log (function2.length);
+function func1(a, b, c) {
+};
+countArguments(func1);
 
 /*
 6. Define a function  reverseString  that computes the reversal of a string. For example, reverseString("jag testar") should return the string "ratset gaj".
 */
 
-const reverseString = (arr) => {
-   let sortedArr = arr.sort().reverse()
-   return sortedArr[0] // memory slot for first item in the array
- }
- Input / Output
- let trial1 = [1,4,2];
- let trial2 = [7,8,3];
- console.log("the highest number of " + trial1 + " is " + reverseString(trial1));
- console.log("the highest number of " + trial2 + " is " + reverseString(trial2));
-
+function reverseString(input) {
+    return input.split("").reverse().join("");
+}
+console.log(reverseString("Reverse Me!"));
 /*
 7. Write a function  findLongestWord  that takes an array of words and returns the length of the longest one.
 */
-function findLongestWord(arr) {
-  let word = "";
-  for (let i = 0; i < arr.length; i++) {
-    if (word.length < arr[i].length) {
-      word = arr[i];
-    }
-  }
-  return word;
-};
 
+function findLongestWord(str_ara) {
+  let max = str_ara[0].length;
+  str_ara.map(v => max = Math.max(max, v.length));
+  result = str_ara.filter(v => v.length == max);
+  return result;
+}
+
+console.log(findLongestWord(['super', 'cali', 'fragilistic', 'expialidocious']));
 /*
 8. Write a function  filterLongWords  that takes an array of words and a number  i  and returns the array of words that are longer than i characters long.
 */
-let i = 6 // i assigned value sets filter in function "word"
-  var arrayInput = ["I","struggle","with","coding","from","time","to","time"];
-  var arrayCleaned = arrayInput.filter( function( word ) {
-    return word.length >= i;
-  });
-  console.log(arrayCleaned);
-};
-//copied code for problems 4-8 from John Bond. Will tweak it and write my own code later.
+
+function filterLongWords(arr, len){
+	return arr.filter((word) => word.length > len);
+}
+
+console.log(filterLongWords(['super', 'cali', 'fragilistic', 'expialidocious'],4));
+
+//Replaced questions 4 through 8 with my own code, resubmitted assignment.
