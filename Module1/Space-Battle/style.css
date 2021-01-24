@@ -1,0 +1,50 @@
+#container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+}
+#game-text {
+  width: 500px;
+}
+h1 {
+  text-align: center;
+}
+
+/* Stylizes player input field/console. */
+input {
+  width: 25%;
+  height: 40px;
+  text-align: center;
+  font-size: 1em;
+  font-style: bold;
+  font-family: Courier;
+}
+
+/* Stylizes player action-generated text. */
+.action {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 10px;
+  font-style: bold;
+}
+
+/* Stylizes background image and main font style. */
+body {
+  background-image: url(space-battle-background.jpg);
+  background-repeat: repeat;
+  font-family: Courier;
+  text-align: center;
+}
+
+/* Stylizes solid background in front of background pic to make text more readable. */
+#main {
+	border-radius: 25px;
+	background: rgba(255, 255, 255, 0.75);
+  max-width: 600px;
+  margin: auto;
+  padding-bottom: 25px;
+  text-align: center;
+}
