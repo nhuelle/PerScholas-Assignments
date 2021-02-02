@@ -1,0 +1,49 @@
+body{
+  margin: auto;
+  background:#f7f6f6;
+  margin: 1%;
+	box-sizing: border-box;
+}
+
+/* Container to hold objects in correct position. */
+.container {
+  margin: auto;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  justify-content: center;
+  height: 100%;
+}
+.container .sideBar {
+    margin: auto;
+    height: 100%;
+    width: 20%;
+    background: #dddddd;
+  /* linear-gradient(#2e96ea, #30c8ca); */
+    justify-content: center;
+    text-align: center;
+}
+.container .main{
+    height: 820px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.container .main > div {
+    background: #dddddd;
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: "Lucida Console";
+}
+
+.websiteVisitors {
+  grid-area: 2 / 1 / span 2 / span 3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lucida Console", monospace;
+}
