@@ -1,0 +1,54 @@
+body {
+	background-color: navy;
+	text-align: center;
+	font-family: Arial;
+}
+
+button {
+	margin: .5rem;
+	padding: .3rem;
+	border-radius: .3rem;
+	border: unset;
+	color: white;
+}
+
+#increase {
+	background-color: blue;
+}
+
+#decrease {
+	background-color: crimson;
+}
+
+#reset {
+	background-color: gray;
+}
+
+#get-clue {
+	background-color: gray;
+}
+
+#answer {
+	color: white;
+	background-color: indigo;
+	border-radius: 0;
+	font-size: 115%;
+	padding: .3rem 3rem;
+}
+
+.title {
+	color: white;
+}
+
+.label {
+	color: white;
+}
+
+.value {
+	color: white;
+	font-size: 80%;
+}
+
+#lets-play {
+	color: white;
+}
