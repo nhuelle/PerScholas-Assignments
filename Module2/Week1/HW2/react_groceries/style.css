@@ -1,0 +1,19 @@
+body {
+	background-color: indigo;
+	color: white;
+  font-family: Arial;
+}
+
+.add-item-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+input {
+	width: 33vw;
+}
+
+.purchased-button {
+	margin-left: 1rem;
+}
